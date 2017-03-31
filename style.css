@@ -1,19 +1,41 @@
-.container  {
-    min-height: 700px;
-    background-color: aqua;
-    float: left;
-    width: 100%;
+body {
+    margin: 0;
 }
 
 .header {
-    width: 1000px;
-    background-color: antiquewhite;
+    width: 100%;
+    background: antiquewhite;
     height: 700px;
     float: left;
 }
 
+.headerInside {
+    width: 1170px;
+    margin: 0 auto;
+    background:
+            url(images/surfhouse_logo.png) no-repeat,
+            #7eb3b3;
+    height: inherit;
+}
+
 .buy {
-background-color: #fff51f;
-width: 124px;
-height: 49px;
+    background: #fff51f;
+    width: 124px;
+    height: 49px;
+    font-family: Raleway, sans-serif;
+    color: #000000;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 800;
+    text-align: left;
+}
+
+.logo {
+    margin-top: 24px;
+    width: 125px;
+    height: 111px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
 }
