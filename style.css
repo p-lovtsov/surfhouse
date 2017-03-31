@@ -13,7 +13,7 @@ body {
     width: 1170px;
     margin: 0 auto;
     background:
-            url(images/surfhouse_logo.png) no-repeat,
+            url(images/surfhouse_logo.png) 69px 25px no-repeat,
             #7eb3b3;
     height: inherit;
 }
