@@ -1,0 +1,19 @@
+.container  {
+    min-height: 700px;
+    background-color: aqua;
+    float: left;
+    width: 100%;
+}
+
+.header {
+    width: 1000px;
+    background-color: antiquewhite;
+    height: 700px;
+    float: left;
+}
+
+.buy {
+background-color: #fff51f;
+width: 124px;
+height: 49px;
+}
