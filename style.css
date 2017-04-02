@@ -34,7 +34,12 @@ body, p {
 }
 
 a {
+    color: #333333;
     text-decoration: none;
+}
+
+a:visited {
+    color: black;
 }
 
 .header {
@@ -78,14 +83,14 @@ a {
 
 .content {
     min-height: 800px;
-    background: #edcc79;
+    background: #f8f8f8
 }
 
 .contentInside {
     min-height: inherit;
     width: 1170px;
     margin: 0 auto;
-    background: #87ed87;
+    background: #f8f8f8;
 }
 
 .contentInsideLeft {
@@ -181,11 +186,17 @@ i {
     text-align: left;
 }
 
+/* Меню */
+
+.menu {
+    float: left;
+}
+
 .menu li {
     list-style-type: none;
-    height: 43px;
+    height: 36px;
     width: inherit;
-    font-family: Roboto,sans-serif;
+    font-family: RobotoBold,sans-serif;
     color: #333333;
     font-size: 14px; /* Приближение из-за подстановки шрифтов */
     font-weight: 900;
@@ -195,12 +206,9 @@ i {
     text-transform: uppercase;
 }
 
-.menu {
-    float: left;
-}
-
-a:visited {
-    color: black;
+.menu li:first-child a:visited,
+.menu li:first-child a {
+    color: white;
 }
 
 .menu li:hover,
@@ -214,8 +222,21 @@ a:visited {
     background: #333333;
 }
 
+.menu li:hover a {
+    color: white;
+}
+
 .menu li:first-child {
     height: 66px;
+}
+
+.menu li a {
+    line-height: 20px;
+    padding-left: 40px;
+}
+
+.menu li a:first-child {
+    line-height: 50px;
 }
 
 .menu ul {
@@ -223,6 +244,8 @@ a:visited {
     margin: 0;
     padding: 0;
 }
+
+
 
 .banner1 {
     background-color:  #e0e0e0;
@@ -235,12 +258,153 @@ a:visited {
     font-weight: 800;
     line-height: 36px; /* Приближение из-за подстановки шрифтов */
     text-align: left;
+    margin-top: 30px;
 }
 
 .banner1 p {
     position: relative;
-    top: 100px;
-    left: 50px;
+    top: 90px;
+    left: 140px;
     width: 100px;
     height: 110px;
+    font-family: Raleway-Heavy, sans-serif;
+    color: #333333;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 800;
+    line-height: 36px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.products {
+    min-height: 400px;
+    background-color:  #f8f8f8;
+    width: 870px;
+}
+
+.products h2 {
+    padding-left: 30px;
+    font-family: RobotoBold, sans-serif;
+    color: #707070;
+    font-size: 22px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product {
+    background-color:  #ffffff;
+    width: 270px;
+    height: 320px;
+    float: left;
+    margin-right: 30px;
+}
+
+.product:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+}
+
+.product img {
+    background-color:  #eaeaea;
+    width: 250px;
+    height: 235px;
+    margin: 10px;
+}
+
+.productName {
+    font-family: Roboto, sans-serif;
+    color: #333333;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    font-style: italic;
+    line-height: 18px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    float: left;
+    margin : 10px;
+    width: 130px;
+    min-height: 30px;
+}
+
+.productPrice {
+    font-family: Roboto, sans-serif;
+    color: #333333;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    font-style: italic;
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+}
+
+.productPriceOld {
+    font-family: Roboto, sans-serif;
+    color: rgba(255, 0, 0, 0.6);
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    font-style: italic;
+    text-align: right;
+    text-decoration: line-through;
+    float: right;
+    margin-right: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.brands {
+    background-color: #ffffff;
+    width: 1170px;
+    height: 160px;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands img {
+    width: 150px;
+    height: 150px;
+}
+
+.socialImg {
+    width: 1171px;
+    height: 500px;
+    background-color:  #eaeaea;
+}
+
+.instaFeed b {
+    font-family: RobotoBold, sans-serif;
+    color: #333333;
+    font-size: 22px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+}
+
+.instaFeed {
+    font-family: RobotoBold, sans-serif;
+    color: #333333;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.instaFeedImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.instaFeedImg img {
+    width: 185px;
+    height: 185px;
 }
