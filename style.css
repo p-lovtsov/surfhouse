@@ -18,22 +18,35 @@
     src: url(fonts/Raleway-Bold.ttf);
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/RobotoRegular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(fonts/RobotoBold.ttf);
+}
+
 body, p {
     margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header {
     width: 100%;
-    background: antiquewhite;
+    background: url("images/surf-outdoor-sports-surfer-surfing-163429.jpeg") no-repeat;
     height: 700px;
 }
 
 .headerInside {
     width: 1170px;
     margin: 0 auto;
-    background:
-            url(images/surfhouse_logo.png) 69px 24px no-repeat,
-            #abeafa;
+    background: url(images/surfhouse_logo.png) 69px 24px no-repeat;
     height: inherit;
 }
 
@@ -80,13 +93,15 @@ body, p {
     float: left;
     min-height: 500px;
     background: #b3918e;
+    margin-top: -20px;
 }
 
 .contentInsideRight {
     width: 870px;
     float: right;
     min-height: 900px;
-    background: #1477ff;
+    background-color:  #f8f8f8;
+    margin-top: -20px;
 }
 
 .button {
@@ -101,7 +116,8 @@ body, p {
     float: right;
     position: relative;
     top: 457px;
-    left: 19px;
+    left: 17px;
+    line-height: 53px;
 }
 
 .logo {
@@ -140,7 +156,7 @@ i {
     position: relative;
     top: 79px;
     left: 26px;
-    width: 201px;
+    width: 207px;
     height: 52px;
     text-transform: uppercase;
     font-family: Raleway-Bold, sans-serif;
@@ -153,8 +169,8 @@ i {
 
 .welcome p:nth-child(2) {
     position: relative;
-    top: 100px;
-    left: 20px;
+    top: 107px;
+    left: 22px;
     width: 218px;
     height: 60px;
     font-family: Raleway-Bold, sans-serif;
@@ -167,22 +183,64 @@ i {
 
 .menu li {
     list-style-type: none;
-}
-
-.menu {
+    height: 43px;
+    width: inherit;
     font-family: Roboto,sans-serif;
     color: #333333;
     font-size: 14px; /* Приближение из-за подстановки шрифтов */
     font-weight: 900;
     line-height: 36px; /* Приближение из-за подстановки шрифтов */
     text-align: left;
+    background-color:  #26d2fc;
+    text-transform: uppercase;
 }
 
-.menu li:hover {
+.menu {
+    float: left;
+}
+
+a:visited {
+    color: black;
+}
+
+.menu li:hover,
+.menu li:first-child {
     font-family: Roboto, sans-serif;
     color: #ffffff;
     font-size: 14px; /* Приближение из-за подстановки шрифтов */
     font-weight: 900;
     line-height: 36px; /* Приближение из-за подстановки шрифтов */
     text-align: left;
+    background: #333333;
+}
+
+.menu li:first-child {
+    height: 66px;
+}
+
+.menu ul {
+    width: 270px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner1 {
+    background-color:  #e0e0e0;
+    float: left;
+    width: 270px;
+    height: 300px;
+    font-family: Raleway-Heavy, sans-serif;
+    color: #333333;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 800;
+    line-height: 36px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.banner1 p {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 100px;
+    height: 110px;
 }
